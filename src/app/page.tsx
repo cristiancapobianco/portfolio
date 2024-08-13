@@ -1,112 +1,110 @@
 import Image from "next/image";
 
+import NavBar from "@/ui/NavBar";
+import Skill from "@/ui/Skill";
+import Project from "@/ui/Project";
+import Education from "@/ui/Education";
+import perfilpicture from "@/../public/WhatsApp-Image-2024-04-17-at-15.52.50.png";
+import SmokeEffect from "@/ui/SmokeEffect";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-customDark text-white min-h-screen p-8 flex justify-center relative overflow-hidden">
+      <SmokeEffect />
+      <div className="max-w-6xl w-full relative z-20">
+        <div>
+          <NavBar />
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+        <div className="text-center my-8">
+          <Image src={perfilpicture} alt="foto" width={200} height={200} className="rounded-full mx-auto" />
+          <h1 className="text-4xl font-bold mt-4">Hola! Soy Cristian Capobianco</h1>
+          <h2 className="text-2xl mt-2">Web Developer</h2>
+          <div className="flex justify-center space-x-4 mt-4">
+            <a
+              href="https://www.linkedin.com/in/cristian-sebastian-capobianco/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/cristiancapobianco"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
+            >
+              GitHub
+            </a>
+            <a
+              href="mailto:cristian.s.capobianco@gmail.com"
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
+            >
+              Email
+            </a>
+          </div>
+          <p className="mt-6 text-lg">
+            Soy Cristian Capobianco, un entusiasta desarrollador web full stack con una profunda pasión por construir aplicaciones web impactantes. Me especializo en transformar ideas en soluciones digitales brillantes, combinando creatividad y tecnología para alcanzar nuevos hitos y superar desafíos complejos. Mi misión es crear experiencias digitales excepcionales que inspiren y sorprendan.
           </p>
-        </a>
+        </div>
+        <div className="text-center my-8">
+          <a
+            href="/CristianCapobiancoCV-FullStackDeveloper.pdf"
+            download="Cristian_Capobianco_CV.pdf"
+            className="mt-4 w-80 bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded transition-transform duration-300 hover:border-white hover:text-white hover:bg-transparent hover:scale-105 inline-block"
+          >
+            Descargar CV
+          </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        </div>
+        <div id="habilidades" className="my-8 p-6 rounded-lg  relative z-20">
+          <h1 className="text-3xl font-bold mb-4 text-center">Habilidades</h1>
+          <Skill />
+        </div>
+        <div id="proyectos" className="my-8 p-6 rounded-lg  relative z-20">
+          <h1 className="text-3xl font-bold mb-4 text-center">Proyectos</h1>
+          <Project />
+        </div>
+        <div id="formacion" className="my-8 p-6 rounded-lg  relative z-20">
+          <h1 className="text-3xl font-bold mb-4 text-center">Formación</h1>
+          <Education />
+        </div>
+        <div id="contacto" className="my-8 p-6 rounded-lg relative z-20">
+          <h1 className="text-3xl font-bold text-center mb-4">Contacto</h1>
+          <p className="text-center mb-4">¡Conéctate conmigo a través de mis redes sociales o por correo electrónico!</p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className="flex justify-center space-x-6 mb-6">
+            <a href="https://www.linkedin.com/in/cristian-sebastian-capobianco/" target="_blank" rel="noopener noreferrer">
+              <img src="\skills icons\icons8-linkedin-48.png" alt="LinkedIn" className="h-8 w-8 hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://github.com/cristiancapobianco" target="_blank" rel="noopener noreferrer">
+              <img src="\skills icons\icons8-github-64.png" alt="GitHub" className="h-8 w-8 hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://www.instagram.com/cristian.wild/">
+              <img src="\skills icons\icons8-instagram-48.png" alt="Instagram" className="h-8 w-8 hover:scale-110 transition-transform" />
+            </a>
+          </div>
+
+          <div className="text-center">
+            <p className="text-sm">Correo Electrónico: <a href="mailto:cristian.s.capobianco@gmail.com" className="text-blue-500 hover:underline">cristian.s.capobianco@gmail.com</a></p>
+            <p className="text-sm mt-4">Teléfono: <a href="https://wa.me/5492235599534" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">+54 9 223 559-9534</a></p>
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-sm font-medium">Hecho con</p>
+          </div>
+
+          <div className="flex justify-center space-x-6 mt-2">
+            <img src="\skills icons\icons8-nextjs-96.png" alt="Next.js" className="h-8 w-8" />
+            <img src="\skills icons\icons8-tailwind-css-96.png" alt="Tailwind CSS" className="h-8 w-8" />
+            <img src="\skills icons\icons8-javascript-96.png" alt="JavaScript" className="h-8 w-8" />
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-sm">© {new Date().getFullYear()} Cristian Capobianco. Todos los derechos reservados.</p>
+          </div>
+        </div>
+
       </div>
     </main>
   );
