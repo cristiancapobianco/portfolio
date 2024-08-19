@@ -5,6 +5,12 @@ import react from "@/../public/skills icons/icons8-reaccionar-nativo-48.png";
 import vite from "@/../public/skills icons/icons8-rápidamente-48.png";
 import nextsvg from "@/../public/skills icons/pngwing.com.png";
 import tailwind from "@/../public/skills icons/icons8-tailwind-css-96.png"
+import sass from "@/../public/skills icons/sass.png"
+import sequelize from "@/../public/skills icons/sequelize_original_logo_icon_146348.png"
+import postgre from "@/../public/skills icons/icons8-postgresql-48.png"
+
+
+
 
 import Image from "next/image";
 
@@ -16,6 +22,10 @@ const skills = [
     { name: "ViteJS", logo: vite },
     { name: "NextJS", logo: nextsvg },
     { name: "TailwindCSS", logo: tailwind },
+    { name: "Sass", logo: sass },
+    { name: "Sequelize", logo: sequelize },
+    { name: "postgreSQL", logo: postgre },
+
 
 ];
 

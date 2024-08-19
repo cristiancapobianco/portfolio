@@ -6,10 +6,14 @@ import vite from "@/../public/skills icons/icons8-rápidamente-48.png";
 import react from "@/../public/skills icons/icons8-reaccionar-nativo-48.png";
 import healthbooking from "@/../public/healthbooking.png";
 import cake from "@/../public/cake is a lie.png";
+import sass from "@/../public/skills icons/sass.png"
+import css from "@/../public/skills icons/icons8-css3-48.png"
+
+
 
 const projects = [
-    { name: "HealthBooking", image: healthbooking, description: "App para la gestión de citas médicas", technologies: [JS, vite], link: "https://healthbooking-front.vercel.app/", repoLink: "https://github.com/cristiancapobianco/HealtBooking-Back-end" },
-    { name: "The cake is a lie", image: cake, description: "Biblioteca de videojuegos", technologies: [JS, react], link: "", repoLink: "https://github.com/cristiancapobianco/Henry-videogames-PI" },
+    { name: "HealthBooking", image: healthbooking, description: "App para la gestión de citas médicas", technologies: [JS, vite, sass], link: "https://healthbooking-front.vercel.app/", repoLink: "https://github.com/cristiancapobianco/HealtBooking-Back-end" },
+    { name: "The cake is a lie", image: cake, description: "Biblioteca de videojuegos", technologies: [JS, react, css], link: "", repoLink: "https://github.com/cristiancapobianco/Henry-videogames-PI" },
 ];
 
 export default function Project() {

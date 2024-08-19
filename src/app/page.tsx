@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import NavBar from "@/ui/NavBar";
 import Skill from "@/ui/Skill";
+import SkillsAdd from "@/ui/skillsAdd";
 import Project from "@/ui/Project";
 import Education from "@/ui/Education";
 import perfilpicture from "@/../public/WhatsApp-Image-2024-04-17-at-15.52.50.png";
@@ -61,6 +62,10 @@ export default function Home() {
         <div id="habilidades" className="my-8 p-6 rounded-lg  relative z-20">
           <h1 className="text-3xl font-bold mb-4 text-center">Habilidades</h1>
           <Skill />
+        </div>
+        <div className="my-8 p-6 rounded-lg  relative z-20">
+          <h1 className="text-3xl font-bold mb-4 text-center">Habilidades adicionales</h1>
+          <SkillsAdd />
         </div>
         <div id="proyectos" className="my-8 p-6 rounded-lg  relative z-20">
           <h1 className="text-3xl font-bold mb-4 text-center">Proyectos</h1>
