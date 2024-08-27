@@ -24,7 +24,7 @@ export default function Home() {
         <div>
           <NavBar />
         </div>
-        <div className="text-center my-8">
+        <div className="text-center my-8 mt-16">
           <div className="flex items-center justify-between space-x-8 min-h-[80vh] mb-24">
             <div>
               <h1 className="text-5xl font-bold">Hola! Soy Cristian Capobianco</h1>

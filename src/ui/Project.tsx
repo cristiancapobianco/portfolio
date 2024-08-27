@@ -30,7 +30,11 @@ export default function Project() {
                     </div>
                     <div className="ml-6 flex-1 p-6 flex flex-col justify-between">
                         <div>
-                            <a href={proj.link} className="text-2xl font-bold">{proj.name}</a>
+                            {proj.link ? (
+                                <a href={proj.link} className="text-2xl font-bold">{proj.name}</a>
+                            ) : (
+                                <h1 className="text-2xl font-bold">{proj.name}</h1>
+                            )}
                             <p className="text-gray-400 my-2">{proj.description}</p>
                         </div>
                         <div className="flex items-center justify-between mt-4">
