@@ -1,7 +1,13 @@
+import Image from "next/image";
+
+import henry from "@/../public/studies/logo-white.png"
+import udemy from "@/../public/studies/Udemy.png"
+
+
 const courses = [
-  { logo: "https://assets.soyhenry.com/henry-landing/assets/Henry/logo-white.png", name: "Henry", specification: "Developer Full Stack", date: "2023-2024" },
-  { logo: "https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og", name: "Udemy", specification: "Developer JavaScript", date: "2022-2023" },
-  { logo: "https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og", name: "Udemy", specification: "Developer C#", date: "2021-2022" },
+  { logo: henry, name: "Henry", specification: "Developer Full Stack", date: "2023-2024" },
+  { logo: udemy, name: "Udemy", specification: "Developer JavaScript", date: "2022-2023" },
+  { logo: udemy, name: "Udemy", specification: "Developer C#", date: "2021-2022" },
 ];
 
 export default function Education() {
@@ -12,7 +18,7 @@ export default function Education() {
           key={index}
           className="relative flex items-center space-x-4 h-24 bg-gray-800 p-4 rounded-lg shadow-md overflow-hidden transition-transform duration-300 transform group hover:scale-105 hover:border-2 hover:border-white box-border"
         >
-          <img
+          <Image
             src={course.logo}
             alt={`${course.name} logo`}
             width={50}

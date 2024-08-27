@@ -1,6 +1,6 @@
-import figma from "@/../public/skills icons/figma.png";
-import illustrator from "@/../public/skills icons/illustrator.png";
-import photoshop from "@/../public/skills icons/photoshop.png";
+import figma from "@/../public/icons/figma.png";
+import illustrator from "@/../public/icons/illustrator.png";
+import photoshop from "@/../public/icons/photoshop.png";
 
 
 import Image from "next/image";

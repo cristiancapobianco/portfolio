@@ -18,10 +18,11 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleScrollToSection = (sectionId) => {
+  const handleScrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
-    if (section) {
-      const navBarHeight = document.querySelector("nav").offsetHeight;
+    const navBarHeight = document.querySelector("nav")?.offsetHeight;
+
+    if (section && navBarHeight) {
       const sectionTop = section.offsetTop;
       window.scrollTo({
         top: sectionTop - navBarHeight,

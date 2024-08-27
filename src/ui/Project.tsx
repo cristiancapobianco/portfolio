@@ -1,13 +1,13 @@
 import Image from "next/image";
-import github from "@/../public/skills icons/github-logo.png";
+import github from "@/../public/icons/github-logo.png";
 
-import JS from "@/../public/skills icons/icons8-javascript-48.png";
-import vite from "@/../public/skills icons/icons8-rápidamente-48.png";
-import react from "@/../public/skills icons/icons8-reaccionar-nativo-48.png";
+import JS from "@/../public/icons/icons8-javascript-48.png";
+import vite from "@/../public/icons/icons8-rápidamente-48.png";
+import react from "@/../public/icons/icons8-reaccionar-nativo-48.png";
 import healthbooking from "@/../public/healthbooking.png";
 import cake from "@/../public/cake is a lie.png";
-import sass from "@/../public/skills icons/sass.png"
-import css from "@/../public/skills icons/icons8-css3-48.png"
+import sass from "@/../public/icons/sass.png"
+import css from "@/../public/icons/icons8-css3-48.png"
 
 
 
@@ -30,7 +30,7 @@ export default function Project() {
                     </div>
                     <div className="ml-6 flex-1 p-6 flex flex-col justify-between">
                         <div>
-                            <h1 className="text-2xl font-bold">{proj.name}</h1>
+                            <a href={proj.link} className="text-2xl font-bold">{proj.name}</a>
                             <p className="text-gray-400 my-2">{proj.description}</p>
                         </div>
                         <div className="flex items-center justify-between mt-4">

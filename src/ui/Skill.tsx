@@ -1,13 +1,13 @@
-import css from "@/../public/skills icons/icons8-css3-48.png";
-import html from "@/../public/skills icons/icons8-html-5-48.png";
-import JS from "@/../public/skills icons/icons8-javascript-48.png";
-import react from "@/../public/skills icons/icons8-reaccionar-nativo-48.png";
-import vite from "@/../public/skills icons/icons8-rápidamente-48.png";
-import nextsvg from "@/../public/skills icons/pngwing.com.png";
-import tailwind from "@/../public/skills icons/icons8-tailwind-css-96.png"
-import sass from "@/../public/skills icons/sass.png"
-import sequelize from "@/../public/skills icons/sequelize_original_logo_icon_146348.png"
-import postgre from "@/../public/skills icons/icons8-postgresql-48.png"
+import css from "@/../public/icons/icons8-css3-48.png";
+import html from "@/../public/icons/icons8-html-5-48.png";
+import JS from "@/../public/icons/icons8-javascript-48.png";
+import react from "@/../public/icons/icons8-reaccionar-nativo-48.png";
+import vite from "@/../public/icons/icons8-rápidamente-48.png";
+import nextsvg from "@/../public/icons/pngwing.com.png";
+import tailwind from "@/../public/icons/icons8-tailwind-css-96.png"
+import sass from "@/../public/icons/sass.png"
+import sequelize from "@/../public/icons/sequelize_original_logo_icon_146348.png"
+import postgre from "@/../public/icons/icons8-postgresql-48.png"
 
 
 
@@ -25,7 +25,6 @@ const skills = [
     { name: "Sass", logo: sass },
     { name: "Sequelize", logo: sequelize },
     { name: "postgreSQL", logo: postgre },
-
 
 ];
 
